@@ -1,0 +1,32 @@
+{
+  "name": "performance__2019",
+  "version": "1.0.0",
+  "description": "Оптимизировать страницу, выложить результат на [Github-Pages](https://help.github.com/en/articles/creating-a-github-pages-site) и проверить его на [shri-perf.ru](https://shri-perf.ru), отправив адрес вашей страницы.",
+  "main": "build/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^2.2.0",
+    "postcss-preset-env": "^6.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darhild/Performance__2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darhild/Performance__2019/issues"
+  },
+  "homepage": "https://github.com/Darhild/Performance__2019#readme"
+}
