@@ -24626,7 +24626,7 @@ document.addEventListener("DOMContentLoaded", function () {
     waterContainer.innerHTML = 
                 `<div class="card-heading">
                     <div class="card-icon-wrap">
-                        <svg class="card-icon">
+                        <svg class="card-icon" width="41px" height="48px">
                             <use xlink:href="img/sprite.svg#kettle">
                         </svg>
                     </div>
