@@ -5,6 +5,7 @@ const preset = require('postcss-preset-env');
 const concat = require('gulp-concat');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
+const minify = require('gulp-minify');
 const svgmin = require('gulp-svgmin');
 const sprite = require('gulp-svg-sprite')
 const server = require('browser-sync').create();
@@ -25,8 +26,9 @@ gulp.task('css', () =>  {
 
 gulp.task('js', function(){
   return gulp.src('./src/js/**/*.js')
-
-    .pipe(gulp.dest('./js'))    
+    .pipe(minify())
+    .pipe(rename({  suffix: '.min' }))
+    .pipe(gulp.dest('./build/js'))    
     .pipe(server.reload({stream: true}))
 });
 
