@@ -655,7 +655,7 @@ html {
 }
 
 .card-icon {
-    width: 48px
+    max-width: 48px
 }
 
 .card-icon-wrap {
