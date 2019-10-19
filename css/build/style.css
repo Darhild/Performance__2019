@@ -7233,7 +7233,7 @@ button.bg-dark:focus {
       left: -24px;
       width: 20px;
       height: 20px;
-      background: url("../img/checked.svg");
+      background: url("../img/svg/checked.svg");
 }
 
 .float-left {
@@ -9901,7 +9901,7 @@ footer {
 }
 
 .card {
-    background: url("../img/cbg.jpg");
+    background: url("../../img/cbg.jpg");
     color: #333;
     border-radius: 20px;
     box-sizing: border-box;
@@ -10249,6 +10249,10 @@ html {
     height: 92px
 }
 
+.card-icon {
+    width: 48px
+}
+
 .card-icon-wrap {
     width: 47px
 }
@@ -10299,7 +10303,7 @@ html {
 }
 
 .description_critical {
-    background: url('../img/cbg.jpg');
+    background: url('../../img/cbg.jpg');
     color: #000;
     border-radius: 20px;
     margin-top: -20px;

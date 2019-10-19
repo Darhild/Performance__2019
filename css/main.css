@@ -315,7 +315,7 @@ footer {
 }
 
 .card {
-    background: url("../img/cbg.jpg");
+    background: url("../../img/cbg.jpg");
     color: #333;
     border-radius: 20px;
     box-sizing: border-box;
@@ -654,6 +654,10 @@ html {
     height: 92px
 }
 
+.card-icon {
+    width: 48px
+}
+
 .card-icon-wrap {
     width: 47px
 }
@@ -704,7 +708,7 @@ html {
 }
 
 .description_critical {
-    background: url('../img/cbg.jpg');
+    background: url('../../img/cbg.jpg');
     color: #000;
     border-radius: 20px;
     margin-top: -20px;
