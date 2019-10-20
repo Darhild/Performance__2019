@@ -44,7 +44,7 @@ gulp.task('svg', () => {
   .pipe(sprite({
     mode: {
       inline: true,      
-      symbol: {        
+      stack: {        
         sprite: 'sprite.svg'
       }
     }
