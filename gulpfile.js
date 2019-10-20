@@ -7,19 +7,25 @@ const csso = require('gulp-csso');
 const rename = require('gulp-rename');
 const minify = require('gulp-minify');
 const svgmin = require('gulp-svgmin');
-const sprite = require('gulp-svg-sprite')
+const sprite = require('gulp-svg-sprite');
+const uncss = require('gulp-uncss');
 const server = require('browser-sync').create();
 
 gulp.task('css', () =>  {
   return gulp.src('./src/css/*.css')
     .pipe(plumber())
     .pipe(postcss([preset()]))
+    /*
+    .pipe(uncss({
+      html: ['./build/index.html']
+    }))
+    */
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./build/css'))
     .pipe(csso({
       sourceMap: true,
     }))
-    .pipe(rename({  suffix: '.min' }))
+    .pipe(rename({  suffix: '.min' }))    
     .pipe(gulp.dest('./build/css'))
     .pipe(server.stream())
 });

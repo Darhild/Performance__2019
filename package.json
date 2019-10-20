@@ -15,7 +15,9 @@
     "gulp-rename": "^1.4.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^2.2.0",
-    "postcss-preset-env": "^6.7.0"
+    "gulp-uncss": "^1.0.6",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-uncss": "^0.17.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
