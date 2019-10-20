@@ -41,10 +41,11 @@ gulp.task('svg', () => {
       pretty: true
     }
   }))*/
+  .pipe(rename({ prefix: 'icon-' }))
   .pipe(sprite({
     mode: {
       inline: true,      
-      stack: {        
+      symbol: {        
         sprite: 'sprite.svg'
       }
     }
