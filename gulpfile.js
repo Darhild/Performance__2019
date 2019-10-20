@@ -33,7 +33,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('svg', () => {
-  return gulp.src('./img/svg/*.svg')
+  return gulp.src('./src/img/svg/*.svg')
   .pipe(plumber())
   .pipe(svgmin({
     js2svg: {
@@ -44,11 +44,11 @@ gulp.task('svg', () => {
     mode: {
       inline: true,      
       symbol: {        
-        sprite: '../sprite.svg'
+        sprite: 'sprite.svg'
       }
     }
   }))
-  .pipe(gulp.dest('./img'))
+  .pipe(gulp.dest('./build/img'))
 })
 
 gulp.task("serve", function () {
@@ -62,6 +62,6 @@ gulp.task("serve", function () {
     ui: false
   });
 
-  gulp.watch("./**/*.css", gulp.series("css"));
-  gulp.watch("./**/*.js", gulp.series("js"));
+  gulp.watch("./src/**/*.css", gulp.series("css"));
+  gulp.watch("./src/**/*.js", gulp.series("js"));
 });
