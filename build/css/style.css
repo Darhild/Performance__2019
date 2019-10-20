@@ -10302,7 +10302,7 @@ html {
 }
 
 .description_critical {
-    background: url('../img/cbg.jpg');
+    background-color: #EBEBEB; 
     color: #000;
     border-radius: 20px;
     margin-top: -20px;
