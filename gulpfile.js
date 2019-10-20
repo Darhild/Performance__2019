@@ -35,13 +35,12 @@ gulp.task('js', function(){
 gulp.task('svg', () => {
   return gulp.src('./src/img/svg/*.svg')
   .pipe(plumber())
-  /*
+  .pipe(rename({ prefix: 'icon-' }))
   .pipe(svgmin({
     js2svg: {
       pretty: true
     }
-  }))*/
-  .pipe(rename({ prefix: 'icon-' }))
+  }))  
   .pipe(sprite({
     mode: {
       inline: true,      
