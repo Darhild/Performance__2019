@@ -35,11 +35,12 @@ gulp.task('js', function(){
 gulp.task('svg', () => {
   return gulp.src('./src/img/svg/*.svg')
   .pipe(plumber())
+  /*
   .pipe(svgmin({
     js2svg: {
       pretty: true
     }
-  }))
+  }))*/
   .pipe(sprite({
     mode: {
       inline: true,      
